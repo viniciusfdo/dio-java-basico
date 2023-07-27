@@ -3,18 +3,21 @@ public class Usuario {
 
         Tv Tv = new Tv();
 
-Tv.diminuirVolume();
-Tv.diminuirVolume();
-Tv.diminuirVolume();
-Tv.aumentarVolume();
-
-
         System.out.println("TV ligada ? " + Tv.ligada);
-        System.out.println("Canal atual : " + Tv.canal);
-        System.out.println("Volume atual : " + Tv.volume);
-
         Tv.ligar ();
-            System.out.println("Novo Status - TV ligada ? " + Tv.ligada);
+        System.out.println("Novo Status - TV ligada ? " + Tv.ligada);
 
+        Tv.diminuirVolume();
+        Tv.diminuirVolume();
+        Tv.diminuirVolume();
+        Tv.aumentarVolume();
+
+        System.out.println("Canal atual : " + Tv.canal);
+
+        Tv.mudarCanal(13);
+
+        System.out.println("Canal mudou para : " + Tv.canal);
+
+        System.out.println("Volume atual : " + Tv.volume);
     }
 }
